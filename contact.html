@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+  <title>Contact Fernando's Voyage</title>
   <link rel="stylesheet" href="./styles/travel_recommendation.css">
   <style>
     /* Estilos adicionales específicos para la página de contacto */
@@ -60,32 +61,37 @@
     }
   </style>
 </head>
+
 <body>
   <nav>
-    <h1>Travel Bloom</h1>
+    <h1>Fernando's Voyage</h1>
     <ul>
       <li><a href="./index.html" id="home">Home</a></li>
       <li><a href="./about.html" id="about">About Us</a></li>
       <li><a href="./contact.html" id="contact">Contact Us</a></li>
     </ul>
   </nav>
-  
+
   <div id="contactSection">
     <h2>Contact Us</h2>
     <form id="contactForm" onsubmit="thankYou(event)">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required aria-label="Name">
-      
+
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required aria-label="Email">
-      
+
       <label for="message">Message:</label>
       <textarea id="message" name="message" rows="5" required aria-label="Message"></textarea>
-      
-      <button type="submit">Submit</button>
+
+      <button type="submit">Send Message</button>
     </form>
   </div>
-  
+
+  <footer style="text-align: center; padding: 2rem; background: #004d4d; color: white; margin-top: 2rem;">
+    <p>&copy; 2025 Fernando's Voyage. Built with passion by <strong>Fernando Farfán</strong>.</p>
+  </footer>
+
   <script src="./scripts/travel_recommendation.js"></script>
   <script>
     function thankYou(event) {
@@ -95,4 +101,5 @@
     }
   </script>
 </body>
+
 </html>
